@@ -13,6 +13,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
+git submodule update
 cd hugo
 hugo
 cd ..
